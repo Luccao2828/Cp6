@@ -1,0 +1,46 @@
+.slideShowContainer {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 100px; /* Espaço extra adicionado abaixo do slideshow */
+  overflow: hidden;
+  position: relative;
+}
+
+.slideShowContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navegacao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.navegacao button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navegacao button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navegacao button:active {
+  background-color: #004085;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
